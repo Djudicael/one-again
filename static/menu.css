@@ -1,0 +1,37 @@
+menu {
+    position: absolute;
+    right: 25%;
+    top: 16px;
+  }
+
+.kanban-test{
+    font-family: arial;
+  background: #333;
+  display: grid;
+  color: #D8ADC9;
+ 
+  margin: 0 0.75rem;
+  box-shadow: 0 2rem 9rem rgba(0, 0, 0, 0.8);
+}
+
+.kanban-test:before, .kanban-test:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0.75rem;
+    background: #333;
+  }
+  .kanban-test:before {
+    left: -0.75rem;
+    border-radius: 0.75rem 0 0 0.75rem;
+  }
+  .kanban-test:after {
+    right: -0.75rem;
+    border-radius: 0 0.75rem 0.75rem 0;
+  }
+
+  .menu-setting{
+
+  }
+ 

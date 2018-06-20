@@ -1,0 +1,123 @@
+
+
+/*card item*/
+
+.item-card {
+    display: block;
+    margin: 5px 0;
+    padding: 5px 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    background: #191936;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/*CARD header*/
+.item-card-header{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    background-color:#642C56;
+    color: #D8ADC9;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+   
+}
+
+.item-task-name{
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+
+.item-card-delete{
+    grid-row: 1;
+    grid-column: 3/3;
+    text-align: center;
+}
+
+.fa-trash-o{
+    position:relative;
+    top: calc(50% - 10px); /* 50% - 3/4 of icon height */
+}
+
+/*CARD content*/
+.item-card-content{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:  2fr 1fr;
+    background-image: -webkit-radial-gradient(top, circle cover, #642C56 0%, #191936 80%);
+    /*background-color: #403078;*/
+    color: white;
+    
+}
+
+.item-card-description{
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
+    
+    color: rgb(255, 255, 255);
+    border-top: 1px solid;
+    border-top-color: #6E4CC1;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 16px;
+    width: 90%;
+}
+.item-card-trigram-action-man{
+    grid-row: 1/2;
+    text-align: center;
+    position:relative;
+    top: calc(50% - 10px); /* 50% - 3/4 of icon height */
+}
+.item-card-trigram-reviewer{
+    grid-row: 2/2;
+    text-align: center;
+    position:relative;
+    top: calc(50% - 10px); /* 50% - 3/4 of icon height */
+}
+
+/*CARD FOOTER*/
+
+.item-card-footer {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    /*background-color: #6E4CC1;*/
+    background-image: -webkit-radial-gradient(top, circle cover, #6E4CC1 0%, #642C56 80%);
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    font-size:  1rem;
+    line-height: normal;
+    width: 100%;
+    color: #d8d8e7;
+    padding: 8px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.item-card-modif{
+  
+    grid-row: 1;
+    text-align: center;
+   
+}
+.item-card-valid{
+   
+    grid-row: 1;
+    text-align: center;
+
+   
+}
+.item-card-not-valid{
+    
+    grid-row: 1;
+    text-align: center;
+}
